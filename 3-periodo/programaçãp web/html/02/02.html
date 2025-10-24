@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            width: 900px;
+            padding: 50px 100px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 7px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.247);
+        }
+
+        ol {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Imagens</h1>
+        <ol>
+                <li>
+                    <p>Local</p>
+                    <img src="jogos-vorazes-qual-a-ordem-correta-para-ver-os-filmes.jpg" width="300" height="300" title="The Mockingjay">
+                </li>
+                <li>
+                    <p>Externo</p>
+                    <img src="https://picsum.photos/300" alt="" title="Lorem Picsum">
+                </li>
+            </ol>
+    </div>
+
+    <div class="container">
+        <h1>Vídeos</h1>
+        <ol>
+                <li>
+                    <p>Local</p>
+                    <video controls muted autoplay width="300" height="300" >
+                        <source src="mov_bbb.mp4">
+                    </video>
+                </li>
+                <li>
+                    <p>Externo</p>
+                    <iframe width="300" height="300" src="https://www.youtube.com/embed/euDs0fC0pe8?si=RIaVpz5IOjG3YJMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </ol>
+    </div>
+
+    <div class="container">
+        <h1>Áudios</h1>
+        <ol>
+                <li>
+                    <p>Local</p>
+                    <audio controls muted autoplay>
+                        <source src="cascade-breathe-future-garage-412839.mp3">
+                    </audio>
+                </li>
+                <li>
+                    <p>Externo</p>
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1nSF7mrf2Wt4VKsN3cemM2?utm_source=generator" width="350" height="350" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" muted></iframe>
+                </li>
+            </ol>
+    </div>
+
+    <div class="container">
+        <h1>Links</h1>
+        <ol>
+                <li>
+                    <a href="https://www.youtube.com/">Local</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">Externo</a>
+                </li>
+            </ol>
+    </div>
+    
+</body>
+</html>
