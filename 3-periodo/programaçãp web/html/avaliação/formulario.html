@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formulário de Dados Pessoais</h1>
+
+
+    <form action="#">
+
+        <fieldset>
+
+            <label for="nome">
+                Nome:<br>
+                <input type="text" name="nome">
+            </label>
+
+            <br>
+            <br>
+
+            <label for="sobrenome">
+                Sobrenome:<br>
+                <input type="text" name="sobrenome">
+            </label>
+
+            <br>
+            <br>
+
+            <label for="sexo">
+                Sexo:<br>
+                <input type="radio" name="sexo" value="masculino"> Masculino<br>
+                <input type="radio" name="sexo" value="feminino"> Feminino
+            </label>
+
+            <br>
+            <br>
+
+            <label for="raca">
+                Raça:<br>
+                <input type="checkbox" name="raca" value="branco"> Branco<br>
+                <input type="checkbox" name="raca" value="negro"> Negro<br>
+                <input type="checkbox" name="raca" value="amarelo"> Amarelo<br>
+                <input type="checkbox" name="raca" value="pardo"> Pardo<br>
+                <input type="checkbox" name="raca" value="indigena"> Indígena
+            </label>
+
+            <br>
+            <br>
+
+            <label for="nacio">
+                Nacionalidade:<br>
+                <select name="nacio">
+                    <option value="" selected disabled>Selecione um país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colômbia</option>
+                    <option value="equador">Equador</option>
+                    <option value="guiana">Guiana</option>
+                    <option value="paraguai">Paraguia</option>
+                    <option value="peru">Peru</option>
+                    <option value="suriname">Suriname</option>
+                    <option value="uruguai">Uruguai</option>
+                    <option value="venezuela">Venezuela</option>
+                </select>
+            </label>
+
+            <br>
+            <br>
+
+            <label for="opniao">
+                Sua opnião sobre o seu país:<br>
+                <textarea name="opniao" rows="10"></textarea>
+            </label>
+
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
