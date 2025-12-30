@@ -1,7 +1,8 @@
 CREATE OR REPLACE FUNCTION gerar_codigo_produto_abreviado(
-    nome_p VARCHAR
-)
-RETURNS VARCHAR AS $$
+	nome_p TEXT)
+RETURNS VARCHAR
+LANGUAGE plpgsql
+AS $$
 DECLARE
     codigo VARCHAR;
 BEGIN
@@ -15,10 +16,9 @@ BEGIN
     RETURN codigo;
 
 END;
-$$ LANGUAGE plpgsql;
+$$;
 
 
-
-SELECT gerar_codigo_produto_abreviado('Notebook Gamer');
-SELECT gerar_codigo_produto_abreviado('Monitor UltraWide');
-SELECT gerar_codigo_produto_abreviado('Mouse Sem Fio');
+SELECT gerar_codigo_produto_abreviado('Notebook Gamer'); -- Deve retornar 'NOTEBOOK-GAMER'
+SELECT gerar_codigo_produto_abreviado('Monitor UltraWide'); -- Deve retornar 'MONITOR-ULTRAWI' (abreviado para 15 caracteres)
+SELECT gerar_codigo_produto_abreviado('Mouse Sem Fio'); -- Deve retornar 'MOUSE-SEM-FIO'
