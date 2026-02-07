@@ -1,0 +1,240 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.202);
+}
+
+header img {
+    width: 140px;
+}
+
+header h1 {
+    color: #1d9bf0;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+body > hr {
+    border-color: #1d9bf0;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.nav-item {
+    background-color: #1d9bf0;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .1s ease-in;
+}
+
+.nav-item:hover {
+    background-color: blue;
+    transform: scale(1.1);
+}
+
+.nav-item a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 330px;
+    background-color: #f0f4f5;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.202);
+    transition: transform .3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    height: 300px;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.card-desc {
+    text-align: left;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-desc h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aut {
+    color: #526370;
+}
+
+.desc {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card-desc button {
+    background-color: #1d9bf0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 130px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card-desc button:hover {
+    background-color: blue;
+}
+
+
+footer {
+    background-color: #1d9bf0;
+    color: white;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 479px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        width: 100%;
+        max-width: 250px;
+        height: 45px;
+    }
+
+    body > hr {
+        width: 90%;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+
+    .cards {
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .card {
+        width: 40%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 8px;
+        object-fit: cover;
+    }
+
+    .card-desc {
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .card-desc h3 {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    .card-desc button {
+        width: 100%;
+        max-width: 100px;
+        font-size: 12px;
+        height: 30px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+        height: auto;
+    }
+}

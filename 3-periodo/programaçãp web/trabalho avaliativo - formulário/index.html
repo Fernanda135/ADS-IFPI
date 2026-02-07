@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Formulário de Cadastro</h1>
+    
+    <form action="#" method="post">
+
+        <div class="form-container data-form">
+
+            <h2>Dados Pessoais</h2>
+            <hr>
+
+            <div class="input-field">
+
+                <label for="name"><p>Nome<span>*</span></p>
+                    <input type="text" name="name" id="name" required placeholder="Digite seu nome">
+                    <span class="warn"></span>
+                </label>
+
+                <label for="surname"><p>Sobrenome</p>
+                    <input type="text" name="surname" id="surname" placeholder="Digite seu sobrenome">
+                    <span class="warn"></span>
+                </label>
+
+                <label for="cpf"><p>CPF<span>*</span></p>
+                    <input type="text" name="cpf" id="cpf" required maxlength="11" placeholder="Somente números">
+                    <span class="warn"></span>
+                </label>
+
+            </div>
+
+            <div class="input-field">
+
+                <label for="b-date"><p>Data de Nascimento<span>*</span></p>
+                    <input type="text" name="b-date" id="b-date" placeholder="DD/MM/AAAA" maxlength="10" required >
+                    <span class="warn"></span>
+                </label>
+
+                <label for="phone-num"><p>Telefone<span>*</span></p>
+                    <input type="tel" name="phone-num" id="phone-num" required placeholder="Ex: 88999998888">
+                    <span class="warn"></span>
+                </label>
+
+                <label for="sex"><p>Sexo<span>*</span></p>
+                    <select name="sex" id="sex" required>
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="fem">Feminino</option>
+                        <option value="masc">Masculino</option>
+                    </select>
+                    <span class="warn"></span>
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="form-container adress-form">
+
+            <h2>Endereço</h2>
+            <hr>
+
+            <div class="input-field">
+
+                <label for="street"><p>Rua<span>*</span></p>
+                    <input type="text" name="street" id="street" required placeholder="Nome da rua">
+                    <span class="warn"></span>
+                </label>
+
+                <label for="number"><p>Número<span>*</span></p>
+                    <input type="text" name="number" id="number" required placeholder="Número da residência">
+                    <span class="warn"></span>
+                </label>
+
+                <label for="compl"><p>Complemento</p>
+                    <input type="text" name="compl" id="compl" placeholder="Apto, Bloco, Casa... (opcional)">
+                    <span class="warn"></span>
+                </label>
+
+            </div>
+
+            <div class="input-field">
+
+                <label for="neighb"><p>Bairro</p>
+                    <input type="text" name="neighb" id="neighb" placeholder="Nome do bairro">
+                    <span class="warn"></span>
+                </label>
+
+                <label for="city"><p>Cidade<span>*</span></p>
+                    <input type="text" name="city" id="city" required placeholder="Nome da cidade">
+                    <span class="warn"></span>
+                </label>
+                
+                <label for="state"><p>Estado<span>*</span></p>
+                    <select name="state" id="estado" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                    <span class="warn"></span>
+
+                </label>
+
+                <label for="cep"><p>Cep<span>*</span></p>
+                    <input type="text" name="cep" id="cep" required maxlength="9" placeholder="Somente números">
+                    <span class="warn"></span>
+                    <a href="#" id="buscarCep">Não sei meu CEP</a>
+                    <div id="resultadosCep"></div>
+                </label>
+
+            </div>
+                
+        </div>
+
+        <div class="form-container pass-form">
+
+            <h2>Senha</h2>
+            <hr>
+
+            <div class="input-field">
+                <label for="username"><p>Apelido<span>*</span></p>
+                    <input type="text" name="username" id="username" required placeholder="Como quer ser chamado">
+                    <span class="warn"></span>
+                </label>
+            </div>
+
+            <div class="input-field">
+                <label for="email"><p>Email<span>*</span></p>
+                    <input type="email" name="email" id="email" required placeholder="exemplo@email.com">
+                    <span class="warn"></span>
+                </label>
+            </div>
+
+            <div class="input-field">
+                <label for="passw"><p>Definir uma senha<span>*</span></p>
+                    <input type="password" name="passw" id="passw" required minlength="8" placeholder="Crie uma senha">
+                    <span class="eye-icon" onclick="togglePassword('passw')">
+                        <img src="eye-slash.svg" alt="Mostrar senha" id="eye-passw">
+                    </span>
+                    <span class="warn"></span>
+                </label>
+
+                <div class="password-requirements">
+                    <div class="requirement" id="req-length">✓ Mínimo 8 caracteres</div>
+                    <div class="requirement" id="req-upper">✓ Deve conter uma letra maiúscula</div>
+                    <div class="requirement" id="req-lower">✓ Deve conter uma letra minúscula</div>
+                    <div class="requirement" id="req-number">✓ Deve conter um número</div>
+                    <div class="requirement" id="req-special">✓ Deve conter um caractere especial</div>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label for="rpassw"><p>Repetir a senha<span>*</span></p>
+                    <input type="password" name="rpassw" id="rpassw" required minlength="8" placeholder="Digite a senha novamente">
+                    <span class="eye-icon" onclick="togglePassword('rpassw')">
+                        <img src="eye-slash.svg" alt="Mostrar senha" id="eye-rpassw">
+                    </span>
+                    <span class="warn"></span>
+                </label>
+            </div>
+            
+            <div class="input-field">
+                <input type="submit" value="Enviar" class="send">
+            </div>
+
+        </div>
+    </form>
+
+    <footer>
+        <p>Todos os direitos reservados. <i><span id="currentYear"></span></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
